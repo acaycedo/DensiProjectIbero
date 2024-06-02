@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IberoAplicacionProject</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingrese_contrase_a">Ingrese Contraseña</string>
+</resources>
