@@ -20,6 +20,13 @@ class LoginActivity: AppCompatActivity(){
         signInButton.setOnClickListener{
             val username=usernameEditText.text.toString()
             val password=passwordEditText.text.toString()
+            var uservalid="andres"
+            var passvalid="12345"
+
+            if (username == uservalid && password==passvalid){
+                val intent: Intent = Intent(this, ConversionActivity:: class.java)
+                startActivity(intent)
+            }
             finish()
         }
         val signUpButton = findViewById<Button>(R.id.buttonSignUp)
