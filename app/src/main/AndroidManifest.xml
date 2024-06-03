@@ -33,7 +33,6 @@
         <activity
             android:name=".UsuarioActivity"
             android:exported="true"/>
-
     </application>
 
 </manifest>
