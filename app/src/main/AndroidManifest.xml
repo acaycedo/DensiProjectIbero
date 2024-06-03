@@ -29,8 +29,6 @@
             android:exported="true"/>
         <activity
             android:name=".ConversionActivity"
-            android:exported="true"/>
-
     </application>
 
 </manifest>
