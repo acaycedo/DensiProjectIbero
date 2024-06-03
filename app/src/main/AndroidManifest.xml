@@ -30,6 +30,9 @@
         <activity
             android:name=".ConversionActivity"
             android:exported="true"/>
+        <activity
+            android:name=".UsuarioActivity"
+            android:exported="true"/>
 
     </application>
 

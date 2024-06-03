@@ -10,7 +10,8 @@ class ConversionActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_conversion)
-
+        /*Mas de lo mismo, aca solo existen dos botones funcionales que son los de
+        cerrar la sesion o entrar al perfil del usuario para actualizar datos*/
         val imageButtonBack= findViewById<ImageButton>(R.id.imageButtonBack)
         imageButtonBack.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity:: class.java)
@@ -18,9 +19,10 @@ class ConversionActivity: AppCompatActivity() {
         }
         val imageButtonPerfil= findViewById<ImageView>(R.id.buttonPerfil)
         imageButtonPerfil.setOnClickListener{
-            val intent: Intent = Intent(this, ConversionActivity:: class.java)
+            val intent: Intent = Intent(this, UsuarioActivity:: class.java)
             startActivity(intent)
         }
+
 
     }
 
