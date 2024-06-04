@@ -7,15 +7,17 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    /*Activity main solo tendra funciones para redirigir al usuario*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        /*Primero esta el boton para registrarse en caso de no tener una cuenta creada*/
         val signUpButton = findViewById<Button>(R.id.buttonSignUp)
         signUpButton.setOnClickListener{
             val intent: Intent = Intent(this, SignUpActivity:: class.java)
             startActivity(intent)
         }
+        /*Y el boton para iniciar sesion que por ahora el modulo esta en espera*/
         val signInButton = findViewById<Button>(R.id.buttonSignIn)
         signInButton.setOnClickListener{
             val intent: Intent = Intent(this, LoginActivity:: class.java)
