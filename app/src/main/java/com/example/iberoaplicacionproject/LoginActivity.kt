@@ -33,7 +33,6 @@ class LoginActivity: AppCompatActivity(){
                 val intent: Intent = Intent(this, ConversionActivity:: class.java)
                 startActivity(intent)
             }
-            finish()
         }
         /*En caso de no tener cuenta existe el boton signUp que solo tiene como evento un click que lo devuelve al formulario de registrarse*/
         val signUpButton = findViewById<Button>(R.id.buttonSignUp)
