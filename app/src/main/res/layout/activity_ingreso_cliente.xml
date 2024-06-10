@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SignUpActivity">
+    tools:context=".IngresoCliente">
 
     <TextView
         android:id="@+id/iniciarDecorativo"
@@ -14,7 +14,7 @@
         android:layout_marginTop="230dp"
         android:layout_marginEnd="32dp"
         android:bufferType="normal"
-        android:text="Registrate con usuario correo y contraseña"
+        android:text="Inicia sesion con correo y contraseña"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -56,13 +56,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editCorreoText" />
 
     <Button
-        android:id="@+id/buttonSignUp"
+        android:id="@+id/buttonSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
-        android:text="Registrarse"
+        android:text="Iniciar sesión"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,21 +70,21 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttonSignIn"
+        android:id="@+id/buttonSignUp"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="15dp"
-        android:text="Ya tengo una cuenta"
+        android:text="No tengo una cuenta"
         android:textColor="@android:color/background_dark"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
 
     <ImageView
         android:id="@+id/backMain"

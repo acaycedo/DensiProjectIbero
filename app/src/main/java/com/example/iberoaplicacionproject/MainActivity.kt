@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         /*Primero esta el boton para registrarse en caso de no tener una cuenta creada*/
         val signUpButton = findViewById<Button>(R.id.buttonSignUp)
         signUpButton.setOnClickListener{
-            val intent: Intent = Intent(this, SignUpActivity:: class.java)
-            startActivity(intent)
+            val intentUp: Intent = Intent(this, SignUpActivity:: class.java)
+            startActivity(intentUp)
         }
         /*Y el boton para iniciar sesion que por ahora el modulo esta en espera*/
         val signInButton = findViewById<Button>(R.id.buttonSignIn)
         signInButton.setOnClickListener{
-            val intent: Intent = Intent(this, LoginActivity:: class.java)
-            startActivity(intent)
+            val intentOn: Intent = Intent(this, IngresoCliente:: class.java)
+            startActivity(intentOn)
         }
     }
 }

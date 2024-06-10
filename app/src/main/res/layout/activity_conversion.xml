@@ -31,67 +31,41 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         android:singleLine="false"
-        android:hint="Ingrese contenido original"
+        android:enabled="false"
+        android:hint="Modulo inhabilitado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iniciarDecorativo" />
-    <EditText
-        android:id="@+id/textMedidaOriginal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:inputType="text"
-        android:singleLine="false"
-        android:hint="Seleccione medida original"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textConvertOriginal" />
 
     <EditText
         android:id="@+id/densidadAConvertir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
-        android:inputType="textPassword"
+        android:hint="Ingrese los gramos a convertir"
+        android:inputType="numberDecimal"
         android:singleLine="false"
-        android:hint="Ingrese valor a convertir"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMedidaOriginal" />
-    <EditText
-        android:id="@+id/sistemaDeConvercion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:singleLine="false"
-        android:hint="Seleccione a que desea convertir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/densidadAConvertir" />
+        app:layout_constraintTop_toBottomOf="@+id/textConvertOriginal" />
 
     <Button
         android:id="@+id/buttonConvert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="32dp"
         android:text="Convertir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sistemaDeConvercion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -100,11 +74,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:text="Crear una nueva"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonConvert" />
 
@@ -148,6 +123,18 @@
         app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icons8_admin_settings_male_48" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="380dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="Resultado: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/densidadAConvertir" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
